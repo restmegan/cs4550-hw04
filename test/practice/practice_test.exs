@@ -27,5 +27,10 @@ defmodule Practice.PracticeTest do
     assert calc("8 + 5 * 3") == 23
   end
 
-  # TODO: Add two unit tests for palindrome.
+  test "check for some palindromes" do
+    assert palindrome("hello") == false
+    assert palindrome("kayak") == true
+    assert palindrome("how are you") == false
+    assert palindrome("step on no pets") == true
+  end
 end

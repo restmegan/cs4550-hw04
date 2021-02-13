@@ -21,7 +21,7 @@ defmodule Practice do
   end
 
   def palindrome(x) do
-    x ==  String.reverse(x)
+    x ==  String.reverse(String.downcase(x))
   end
 
 end
